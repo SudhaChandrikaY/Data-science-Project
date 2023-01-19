@@ -42,7 +42,7 @@ GNB_Model = GaussianNB()
 GNB_Model.fit(X_Train, Y_Train)
 Gau_Pred = GNB_Model.predict(X_Test)
 Accuracy=accuracy_score(Y_Test,Gau_Pred)
-Accuracy_GNB=Accuracy*100
+Accuracy_GNB=round(Accuracy*100)
 print(Accuracy_GNB)
 
 print("\nSVM Classifier")
@@ -50,7 +50,7 @@ SVM_Model = SVC(kernel = 'linear',random_state=21)
 SVM_Model.fit(X_Train, Y_Train)
 SVM_Pred = SVM_Model.predict(X_Test)
 Accuracy=accuracy_score(Y_Test,SVM_Pred)
-Accuracy_SVM=Accuracy*100
+Accuracy_SVM=round(Accuracy*100)
 print(Accuracy_SVM)
 
 print("\nLogistic Regression")
@@ -58,7 +58,7 @@ LogReg_Model = LogisticRegression(random_state=1)
 LogReg_Model.fit(X_Train, Y_Train)
 LogReg_Pred = LogReg_Model.predict(X_Test)
 Accuracy=accuracy_score(Y_Test,LogReg_Pred)
-Accuracy_LR=Accuracy*100
+Accuracy_LR=round(Accuracy*100)
 print(Accuracy_LR)
 
 print("\nNeural Network: MLP Classifier")
@@ -66,7 +66,7 @@ NNMLP_Model = MLPClassifier(random_state=1, max_iter=500,learning_rate_init=0.4)
 NNMLP_Model.fit(X_Train, Y_Train)
 NN_Pred = NNMLP_Model.predict(X_Test)
 Accuracy=accuracy_score(Y_Test,NN_Pred)
-Accuracy_NN=Accuracy*100
+Accuracy_NN=round(Accuracy*100)
 print(Accuracy_NN)
 
 print("\nKNN Classifier")
@@ -74,7 +74,7 @@ KNN_Model= KNeighborsClassifier(n_neighbors=40,p=2)
 KNN_Model.fit(X_Train, Y_Train)
 KNN_Pred = KNN_Model.predict(X_Test)
 Accuracy=accuracy_score(Y_Test,KNN_Pred)
-Accuracy_NC=Accuracy*100
+Accuracy_NC=round(Accuracy*100)
 print(Accuracy_NC)
 
 print("\nRandom Forest")
@@ -82,5 +82,5 @@ RandFor_Model = RandomForestClassifier(n_estimators=500,criterion='entropy',rand
 RandFor_Model.fit(X_Train, Y_Train)
 RanFor_Pred = RandFor_Model.predict(X_Test)
 Accuracy=accuracy_score(Y_Test,RanFor_Pred)
-Accuracy_RF=Accuracy*100
+Accuracy_RF=round(Accuracy*100)
 print(Accuracy_RF)
