@@ -1,4 +1,6 @@
-“Ensemble Based Approach for Effective Heart Disease Prediction”
+PROJECT TITLE : “Ensemble Based Approach for Effective Heart Disease Prediction”
+
+INTRODUCTION :
 
 Heart Disease is one of the major concerns for society for a long time. The term 
 heart disease is often used interchangeably with the term cardiovascular disease 
@@ -20,7 +22,7 @@ visualization techniques to visualize the trends.
 Dataset used: Cleveland Dataset (from UCI repository)
 https://archive.ics.uci.edu/ml/datasets/heart+disease
 
-DataSet Description :
+DATASET DESCRIPTION:
 
 The heart disease dataset folder comprises four different databases which include 
 Cleveland, Hungary, Switzerland and VA Long Beach databases. Among these, 
@@ -53,7 +55,7 @@ positions on the ECG plot. See more here)
 reversible defect)
 
 
-Implementation :
+IMPLEMENTATION :
 
 Visualization-
 
